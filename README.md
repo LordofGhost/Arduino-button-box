@@ -29,6 +29,6 @@ This is a button box based on an Arduino Uno for computer games.
 - use the axes also as buttons
 
 
-### 
+##
 
 The whole project is inspired by the youtube channel `amstudio` and the Arduino sketch I got from https://github.com/MHeironimus/ArduinoJoystickLibrary
