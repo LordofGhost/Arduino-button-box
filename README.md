@@ -1,6 +1,6 @@
 <h1 align="center">
   🕹 Arduino button box 🕹
-<hi/>
+</h1>
  
 This is a button box based on an Arduino Uno for computer games.
 
