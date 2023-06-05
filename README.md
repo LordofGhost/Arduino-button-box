@@ -22,7 +22,7 @@ This is a button box based on an Arduino Uno for computer games.
 
 - first I cut all the wood parts and glued them together
 - next I installed the logitech joystick which is not connected to the arduino
-- then I soldered all switches together as you can see on the photo `./images/img-8.jpg`
+- then I soldered all switches together as you can see on the [`photo`](https://github.com/LordofGhost/Arduino-button-box/blob/main/images/img-8.jpg)
 - the last thing i did was cover the wood with foil and build an arm tray out of nubby foam
 
 ### Problem
