@@ -18,7 +18,12 @@ This is a button box based on an Arduino Uno for computer games.
 - I had to solder something for the first time
 - I did not know how to use the signals from the switches as input to the pc
 
-### Storytelling
+### Building
+
+- first I cut all the wood parts and glued them together
+- next I installed the logitech joystick which is not connected to the arduino
+- then I soldered all switches together as you can see on the photo `./images/img-8.jpg`
+- the last thing i did was cover the wood with foil and build an arm tray out of nubby foam
 
 ### Problem
 
