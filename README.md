@@ -34,6 +34,6 @@
 - use the axes also as buttons
 
 
-##
+## Credits
 
 The whole project is inspired by the youtube channel `amstudio` and the Arduino sketch I got from https://github.com/MHeironimus/ArduinoJoystickLibrary
