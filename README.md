@@ -2,7 +2,7 @@
   🕹 Arduino button box 🕹
 </h1>
  
-<div align="center">This is a button box based on an Arduino Uno for computer games.</div><br>
+<div align="center">This is a button box based on an Arduino Leonardo for computer games.</div><br>
 
 ![img-1](https://github.com/LordofGhost/Arduino-button-box/blob/main/images/img-1.jpg)
 
@@ -21,13 +21,13 @@
 ### Building
 
 - first I cut all the wood parts and glued them together
-- next I installed the logitech joystick which is not connected to the arduino
+- next I installed the logitech joystick which is not connected to the Arduino
 - then I soldered all switches together as you can see on the [`photo`](https://github.com/LordofGhost/Arduino-button-box/blob/main/images/img-8.jpg)
 - the last thing i did was cover the wood with foil and build an arm tray out of nubby foam
 
 ### Software
 
-- the arduino sketch is created with simhub and can be easily imported from this [`file`](https://github.com/LordofGhost/Arduino-button-box/blob/main/arduino/simhub-profile.tfp)
+- the Arduino sketch is created with simhub and can be easily imported from this [`file`](https://github.com/LordofGhost/Arduino-button-box/blob/main/arduino/simhub-profile.tfp)
 
 ### Problem
 
@@ -40,4 +40,4 @@
 
 ## Credits
 
-The whole project is inspired by the youtube channel `amstudio`
+The project is inspired by the youtube channel `amstudio`
