@@ -25,6 +25,10 @@
 - then I soldered all switches together as you can see on the [`photo`](https://github.com/LordofGhost/Arduino-button-box/blob/main/images/img-8.jpg)
 - the last thing i did was cover the wood with foil and build an arm tray out of nubby foam
 
+### Software
+
+- the arduino sketch is created with simhub and can be easily imported from this [`file`](https://github.com/LordofGhost/Arduino-button-box/blob/main/arduino/simhub-profile.tfp)
+
 ### Problem
 
 - I couldn't use the axes of the small joystick
@@ -36,4 +40,4 @@
 
 ## Credits
 
-The whole project is inspired by the youtube channel `amstudio` and the Arduino sketch I got from https://github.com/MHeironimus/ArduinoJoystickLibrary
+The whole project is inspired by the youtube channel `amstudio`
