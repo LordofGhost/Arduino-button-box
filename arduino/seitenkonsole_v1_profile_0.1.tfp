@@ -8,10 +8,10 @@
       "DefaultValue": "SimHub Dash",
       "Type": "string",
       "Template": "#define DEVICE_NAME \"{0}\"",
-      "Value": "Seitenkonsole"
+      "Value": "Seitenkonsole V1"
     },
     {
-      "UniqueId": "f06f4cc1-43b5-422a-be1c-005cb7eedb64",
+      "UniqueId": "2262a830-a89d-4be6-ac35-2cab148132e6",
       "Group": "General",
       "Name": "DEVICE_UNIQUE_ID",
       "Type": "uniqueid"
@@ -562,7 +562,7 @@
       "DefaultValue": "0",
       "Type": "bool",
       "Value": "0",
-      "Pins": "nano:18,HT16K33 SC MATRIX DAT;19,HT16K33 SC MATRIX CLK|uno:18,HT16K33 SC MATRIX DAT;19,HT16K33 SC MATRIX CLK"
+      "Pins": "328:18,HT16K33 SC MATRIX DAT;19,HT16K33 SC MATRIX CLK|micro:2,HT16K33 SC MATRIX DAT;3,HT16K33 SC MATRIX CLK|mega:20,HT16K33 SC MATRIX DAT;21,HT16K33 SC MATRIX CLK"
     },
     {
       "Group": "HT16K33 Single Color Matrix",
@@ -753,13 +753,21 @@
       "Value": "0"
     },
     {
+      "Group": "SUNFOUNDER SH1.0-4P I2C RGB matrix",
+      "Name": "SUNFOUNDERSH104P_MATRIX_ENABLED",
+      "Title": "Enable SUNFOUNDER SH1.0-4P I2C RGB 8x8 matrix",
+      "DefaultValue": "0",
+      "Type": "bool",
+      "Value": "0"
+    },
+    {
       "Group": "20x4 I2C LCD",
       "Name": "I2CLCD_enabled",
       "Title": "I2C LCD (2004) enabled\r\nUno, Ethernet, Nano : A4(SDA), A5(SCL)\r\nMega2560 : 20 (SDA), 21 (SCL)\r\nLeonardo : 2 (SDA), 3 (SCL)\r\nDue : 20 (SDA), 21 (SCL), SDA1, SCL1",
       "DefaultValue": "0",
       "Type": "bool",
       "Value": "0",
-      "Pins": "nano:18,I2C LCD SDA;19,I2C LCD SCL|uno:18,I2C LCD SDA;19,I2C LCD SCL|mega:20,I2C LCD SDA;21,I2C LCD SCL"
+      "Pins": "328:18,I2C LCD SDA;19,I2C LCD SCL|micro:2,I2C LCD SDA;3,I2C LCD SCL|mega:20,I2C LCD SDA;21,I2C LCD SCL"
     },
     {
       "Group": "20x4 I2C LCD",
@@ -806,7 +814,7 @@
       "DefaultValue": "0",
       "Type": "bool",
       "Value": "0",
-      "Pins": "nano:18,HT16K33 7SEG DAT;19,HT16K33 7SEG CLK|uno:18,HT16K33 7SEG DAT;19,HT16K33 7SEG CLK"
+      "Pins": "328:18,HT16K33 7SEG DAT;19,HT16K33 7SEG CLK|micro:2,HT16K33 7SEG DAT;3,HT16K33 7SEG CLK|mega:20,HT16K33 7SEG DAT;21,HT16K33 7SEG CLK"
     },
     {
       "Group": "HT16K33 Bi Color Matrix",
@@ -815,7 +823,7 @@
       "DefaultValue": "0",
       "Type": "bool",
       "Value": "0",
-      "Pins": "nano:18,HT16K33 MATRIX DAT;19,HT16K33 MATRIX CLK|uno:18,HT16K33 MATRIX DAT;19,HT16K33 MATRIX CLK"
+      "Pins": "328:18,HT16K33 SC MATRIX DAT;19,HT16K33 SC MATRIX CLK|micro:2,HT16K33 SC MATRIX DAT;3,HT16K33 SC MATRIX CLK|mega:20,HT16K33 SC MATRIX DAT;21,HT16K33 SC MATRIX CLK"
     },
     {
       "Group": "HT16K33 Bi Color Matrix",
@@ -935,7 +943,7 @@
       "Title": "Throttle axis enabled",
       "DefaultValue": "0",
       "Type": "bool",
-      "Value": "0"
+      "Value": "1"
     },
     {
       "Group": "Gamepad analog axis",
@@ -952,7 +960,7 @@
       "Title": "Throttle axis analog minimum value",
       "DefaultValue": "0",
       "Type": "int",
-      "Value": "19",
+      "Value": "24",
       "Condition": "GAMEPAD_AXIS_01_ENABLED>0"
     },
     {
@@ -961,7 +969,7 @@
       "Title": "Throttle axis analog maximum value",
       "DefaultValue": "1024",
       "Type": "int",
-      "Value": "1024",
+      "Value": "1000",
       "Condition": "GAMEPAD_AXIS_01_ENABLED>0"
     },
     {
@@ -991,7 +999,7 @@
       "Title": "Accelerator axis enabled",
       "DefaultValue": "0",
       "Type": "bool",
-      "Value": "0"
+      "Value": "1"
     },
     {
       "Group": "Gamepad analog axis",
@@ -999,7 +1007,7 @@
       "Title": "Accelerator axis analog pin",
       "DefaultValue": "0",
       "Type": "pin;Accelerator input",
-      "Value": "4",
+      "Value": "19",
       "Condition": "GAMEPAD_AXIS_02_ENABLED>0"
     },
     {
@@ -1008,7 +1016,7 @@
       "Title": "Accelerator axis analog minimum value",
       "DefaultValue": "0",
       "Type": "int",
-      "Value": "20",
+      "Value": "0",
       "Condition": "GAMEPAD_AXIS_02_ENABLED>0"
     },
     {
@@ -1026,7 +1034,7 @@
       "Title": "Accelerator axis analog sampling precision",
       "DefaultValue": "10",
       "Type": "list",
-      "Value": "11",
+      "Value": "10",
       "Condition": "GAMEPAD_AXIS_02_ENABLED>0",
       "ListValues": "10,10 bits(default 0->1024);11,11 bits oversampling (slower 0->2048)"
     },
@@ -1047,7 +1055,7 @@
       "Title": "Brake axis enabled",
       "DefaultValue": "0",
       "Type": "bool",
-      "Value": "0"
+      "Value": "1"
     },
     {
       "Group": "Gamepad analog axis",
@@ -1055,7 +1063,7 @@
       "Title": "Brake axis analog pin",
       "DefaultValue": "0",
       "Type": "pin;Brake input",
-      "Value": "0",
+      "Value": "20",
       "Condition": "GAMEPAD_AXIS_03_ENABLED>0"
     },
     {
@@ -1103,7 +1111,7 @@
       "Title": "Additional buttons (directly connected to the arduino, 12 max) buttons count",
       "DefaultValue": "0",
       "Type": "int",
-      "Value": "4",
+      "Value": "0",
       "Max": 12
     },
     {
@@ -1112,7 +1120,7 @@
       "Title": "1'st Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 1",
-      "Value": "18",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=1"
     },
     {
@@ -1131,7 +1139,7 @@
       "Title": "1'st Additional button logic",
       "DefaultValue": "0",
       "Type": "list",
-      "Value": "1",
+      "Value": "0",
       "Condition": "ENABLED_BUTTONS_COUNT>=1",
       "ListValues": "0,Normal;1,Reversed"
     },
@@ -1141,7 +1149,7 @@
       "Title": "2'nd Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 2",
-      "Value": "19",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=2"
     },
     {
@@ -1170,7 +1178,7 @@
       "Title": "3'rd Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 3",
-      "Value": "20",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=3"
     },
     {
@@ -1189,7 +1197,7 @@
       "Title": "3'rd Additional button logic",
       "DefaultValue": "0",
       "Type": "list",
-      "Value": "1",
+      "Value": "0",
       "Condition": "ENABLED_BUTTONS_COUNT>=3",
       "ListValues": "0,Normal;1,Reversed"
     },
@@ -1199,7 +1207,7 @@
       "Title": "4'th Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 4",
-      "Value": "13",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=4"
     },
     {
@@ -1228,7 +1236,7 @@
       "Title": "5'th Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 5",
-      "Value": "13",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=5"
     },
     {
@@ -1257,7 +1265,7 @@
       "Title": "6'th Additional button digital pin",
       "DefaultValue": "3",
       "Type": "pin;Button 6",
-      "Value": "13",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONS_COUNT>=6"
     },
     {
@@ -1469,7 +1477,7 @@
       "Title": "Encoder 1 output A (CLK) pin",
       "DefaultValue": "7",
       "Type": "pin;Encoder 1 CLK",
-      "Value": "22",
+      "Value": "7",
       "Condition": "ENABLED_ENCODERS_COUNT>0"
     },
     {
@@ -1478,7 +1486,7 @@
       "Title": "Encoder 1 output B (DT) pin",
       "DefaultValue": "8",
       "Type": "pin;Encoder 1 DT",
-      "Value": "23",
+      "Value": "8",
       "Condition": "ENABLED_ENCODERS_COUNT>0"
     },
     {
@@ -1497,7 +1505,7 @@
       "Title": "Encoder 1 enable pullup resistor",
       "DefaultValue": "0",
       "Type": "bool",
-      "Value": "1",
+      "Value": "0",
       "Condition": "ENABLED_ENCODERS_COUNT>0"
     },
     {
@@ -1506,7 +1514,7 @@
       "Title": "Encoder 1 reverse direction",
       "DefaultValue": "0",
       "Type": "bool",
-      "Value": "1",
+      "Value": "0",
       "Condition": "ENABLED_ENCODERS_COUNT>0"
     },
     {
@@ -1947,7 +1955,7 @@
       "Title": "Column 1 pin",
       "DefaultValue": "2",
       "Type": "pin;Button M. Col 1",
-      "Value": "2",
+      "Value": "7",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_COLS>=1"
     },
     {
@@ -1956,7 +1964,7 @@
       "Title": "Column 2 pin",
       "DefaultValue": "3",
       "Type": "pin;Button M. Col 2",
-      "Value": "3",
+      "Value": "8",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_COLS>=2"
     },
     {
@@ -1965,7 +1973,7 @@
       "Title": "Column 3 pin",
       "DefaultValue": "4",
       "Type": "pin;Button M. Col 3",
-      "Value": "4",
+      "Value": "9",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_COLS>=3"
     },
     {
@@ -1974,7 +1982,7 @@
       "Title": "Column 4 pin",
       "DefaultValue": "5",
       "Type": "pin;Button M. Col 4",
-      "Value": "5",
+      "Value": "10",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_COLS>=4"
     },
     {
@@ -2019,7 +2027,7 @@
       "Title": "Row 1 pin",
       "DefaultValue": "6",
       "Type": "pin;Button M. Row 1",
-      "Value": "6",
+      "Value": "2",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_ROWS>=1"
     },
     {
@@ -2028,7 +2036,7 @@
       "Title": "Row 2 pin",
       "DefaultValue": "7",
       "Type": "pin;Button M. Row 2",
-      "Value": "7",
+      "Value": "3",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_ROWS>=2"
     },
     {
@@ -2037,7 +2045,7 @@
       "Title": "Row 3 pin",
       "DefaultValue": "8",
       "Type": "pin;Button M. Row 3",
-      "Value": "8",
+      "Value": "4",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_ROWS>=3"
     },
     {
@@ -2046,7 +2054,7 @@
       "Title": "Row 4 pin",
       "DefaultValue": "9",
       "Type": "pin;Button M. Row 4",
-      "Value": "9",
+      "Value": "5",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_ROWS>=4"
     },
     {
@@ -2055,7 +2063,7 @@
       "Title": "Row 5 pin",
       "DefaultValue": "2",
       "Type": "pin;Button M. Row 5",
-      "Value": "10",
+      "Value": "6",
       "Condition": "ENABLED_BUTTONMATRIX>0 && BMATRIX_ROWS>=5"
     },
     {
@@ -2226,7 +2234,7 @@
       "Title": "ShakeIT direct PWM outputs enabled, for fans, TIP120 or any PWM driven custom boards",
       "DefaultValue": "0",
       "Type": "int",
-      "Value": "0",
+      "Value": "4",
       "Max": 4
     },
     {
@@ -2369,7 +2377,7 @@
       "Title": "PWM Output 1 min (lower values will disable output)",
       "DefaultValue": "0",
       "Type": "int",
-      "Value": "18",
+      "Value": "0",
       "Condition": "SHAKEITPWMFANS_ENABLED_MOTORS>=1",
       "Max": 255
     },
@@ -2379,7 +2387,7 @@
       "Title": "PWM Output 1 max",
       "DefaultValue": "255",
       "Type": "int",
-      "Value": "254",
+      "Value": "255",
       "Condition": "SHAKEITPWMFANS_ENABLED_MOTORS>=1",
       "Max": 255
     },
@@ -2589,7 +2597,7 @@
       "DefaultValue": "0",
       "Type": "bool",
       "Value": "0",
-      "Pins": "nano:18,OLED LCD SDA;19,OLED LCD SCK|uno:18,OLED LCD SDA;19,OLED LCD SCK|micro:2,OLED LCD SDA;3,OLED LCD SCK"
+      "Pins": "328:18,OLED LCD SDA;19,OLED LCD SCK|mega:20,OLED LCD SDA;21,OLED LCD SCK|micro:2,OLED LCD SDA;3,OLED LCD SCK"
     },
     {
       "Group": "Nokia GLCD",
@@ -2673,7 +2681,7 @@
   ],
   "SerialPort": null,
   "BoardId": "leonardo",
-  "Title": "14.07.2023 14:36 : Arduino Leonardo (ATMega32U4)",
+  "Title": "15.09.2023 23:25 : Arduino Leonardo (ATMega32U4)",
   "UseCustomName": true,
   "CustomPid": 1000.0
 }
