@@ -27,16 +27,7 @@
 
 ### Software
 
-- the Arduino sketch is created with simhub and can be easily imported from this [`file`](https://github.com/LordofGhost/Arduino-button-box/blob/main/arduino/simhub-profile.tfp)
-
-### Problem
-
-- I couldn't use the axes of the small joystick
-
-### Solution
-
-- use the axes also as buttons
-
+- the Arduino sketch was created with the [`Arduino Joystick Library`](https://github.com/MHeironimus/ArduinoJoystickLibrary/tree/version-2.0), you can see my code [`here`](https://github.com/LordofGhost/Seitenkonsole_V1/blob/main/arduino/seitenkonsole_v1_sketch/seitenkonsole_v1_sketch.ino)
 
 ## Credits
 
