@@ -4,7 +4,9 @@
  
 <div align="center">This is a button box based on an Arduino Leonardo for computer games.</div><br>
 
-![img-1](https://github.com/LordofGhost/Arduino-button-box/blob/main/images/img-1.jpg)
+![img-1](https://github.com/LordofGhost/Seitenkonsole_V1/blob/main/images/img-1.jpg)
+
+![img-2](https://github.com/LordofGhost/Seitenkonsole_V1/blob/main/KiCAD/schematic.png)
 
 ## The process
 
