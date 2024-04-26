@@ -4,13 +4,13 @@
  
 <div align="center">This is a button box based on an Arduino Leonardo for computer games.</div><br>
 
-![img-1](https://github.com/LordofGhost/Seitenkonsole_V1/blob/main/images/img-1.jpg)
+![img-1](https://github.com/LordofGhost/Side-Panel/blob/main/images/img_1.jpeg)
 
 ![img-2](https://github.com/LordofGhost/Seitenkonsole_V1/blob/main/KiCAD/schematic.png)
 
 ## The process
 
-### Goals 
+### Goals
 
 - build something that improves the fun of the game
 - not spend 400€ for a bought one
